@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    overflow: hidden;
+    transition: 0.5s all;
+}
+body{
+    background-color:rgb(255, 232, 101);
+    font-family: 'Poppins', sans-serif;
+}
+.page1-container{
+    height: 100vh;
+    width: 100vw;
+}
+.page1{
+    color: rgb(18, 55, 67);
+    font-size: 30px;
+    width: auto;
+    position: relative;
+}   
+.page1 p{
+    color: white;
+    display: inline;
+}
+.page1 h1{
+    display: inline-block;
+}
+.page1 h2{
+    margin-top: 10px;
+}
+.intro-info{
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+    padding-top: 10vh;
+    padding-left: 2vw;
+}
+.canvas{
+    position: absolute;
+    aspect-ratio: 4/3;
+    height: 100vh;    
+    right: 0;
+    top: 0;
+}
+#next-button{
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(18, 55, 67);
+    display: block;
+    position: absolute;
+    left: 15%;
+    margin-top: 15vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+#next-button:hover{
+    background-color: rgb(29, 88, 108);
+    width: 110px;
+    height: 110px;
+}
+#back-button{
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(18, 55, 67);
+    display: block;
+    position: absolute;
+    left: 15%;
+    margin-top: 30vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+#back-button:hover{
+    background-color: rgb(29, 88, 108);
+    width: 110px;
+    height: 110px;
+}
