@@ -1,9 +1,8 @@
 import { OrbitControls, Shadow } from "@react-three/drei";
-import { MeAvatar } from "../../MeAvatar";
-import * as THREE from 'three'
-import { R32 } from "../../R32";
-import { NSX } from "../../NSX";
-import { Scene } from "../../Scene";
+import { MeAvatar } from "./MeAvatar";
+import { R32 } from "./R32";
+import { NSX } from "./NSX";
+import { Scene } from "./Scene";
 export const Experience = () => {
 
   return (
