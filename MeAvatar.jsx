@@ -18,7 +18,7 @@ export function MeAvatar(props) {
   
   
   return (
-    <group rotation={[-Math.PI / 2, 0, Math.PI]} position={[0,0.75,2]} scale={[3.6,3.6,3.6]}>
+    <group  rotation={[-Math.PI / 2, 0, Math.PI]} position={[5,0.75,7]} scale={[3.6,3.6,3.6]}>
       <group {...props} ref={group} dispose={null}>
         <primitive object={nodes.Hips} />
         <skinnedMesh geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />

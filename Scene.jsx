@@ -9,7 +9,7 @@ import { useGLTF } from '@react-three/drei'
 export function Scene(props) {
   const { nodes, materials } = useGLTF('./src/models/scene.gltf')
   return (
-    <group {...props} dispose={null}>
+    <group position={[5,0,5]} {...props} dispose={null}>
       <pointLight  intensity={2} decay={2} position={[0, 24, 3]} rotation={[-Math.PI / 2, 0, 0]}  />
       <mesh geometry={nodes.Table.geometry} material={materials.TableWood} position={[0, 3.284, -0.791]} rotation={[Math.PI, 0, Math.PI]} scale={[3.287, 0.112, 1.4]} />
       <group position={[-2.358, 4.325, -0.855]} scale={[0.495, 1, 1]}>

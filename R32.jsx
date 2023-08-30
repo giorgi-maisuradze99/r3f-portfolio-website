@@ -10,7 +10,7 @@ export function R32(props) {
   const { nodes, materials } = useGLTF('./src/models/R32.gltf')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
+      <group position={[65,0,30]} rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_10.geometry} material={materials.mirror} />
         <mesh geometry={nodes.Object_11.geometry} material={materials.misc} />
         <mesh geometry={nodes.Object_12.geometry} material={materials.metal} />
