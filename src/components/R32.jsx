@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function R32(props) {
-  const { nodes, materials } = useGLTF('./src/models/R32.gltf')
+  const { nodes, materials } = useGLTF('/R32.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[65,0,30]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -40,4 +40,4 @@ export function R32(props) {
   )
 }
 
-useGLTF.preload('./src/models/R32.gltf')
+useGLTF.preload('/R32.gltf')

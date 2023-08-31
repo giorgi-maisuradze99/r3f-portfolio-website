@@ -8,8 +8,8 @@ import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
 
 export function MeAvatar(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('./src/models/me-avatar.glb')
-  const {animations: typingAnimation} = useFBX('./src/animations/typing-anim.fbx')
+  const { nodes, materials } = useGLTF('/me-avatar.glb')
+  const {animations: typingAnimation} = useFBX('/typing-anim.fbx')
   typingAnimation[0].name = 'Typing'
   const {actions} = useAnimations(typingAnimation, group)
   useEffect(()=>{
@@ -36,4 +36,4 @@ export function MeAvatar(props) {
   )
 }
 
-useGLTF.preload('./src/models/me-avatar.glb')
+useGLTF.preload('/me-avatar.glb')

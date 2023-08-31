@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function NSX(props) {
-  const { nodes, materials } = useGLTF('./src/models/NSX.gltf')
+  const { nodes, materials } = useGLTF('/NSX.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[0.691, 0.72, 1.748]} rotation={[-0.63, 0, Math.PI / 2]} scale={0.157}>
@@ -68,4 +68,4 @@ export function NSX(props) {
   )
 }
 
-useGLTF.preload('./src/models/NSX.gltf')
+useGLTF.preload('/NSX.gltf')
