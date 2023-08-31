@@ -95,7 +95,7 @@ function App() {
             <div className="page1">
               <div id="intro-info" className={toMonitor ? 'hidden' : 'intro-info'}>
                 <h1>Hi, my <br /> name is <p>Giorgi</p> </h1>
-                <h2>I like creating beautiful user experiences</h2>
+                <h2>I like to have fun coding</h2>
               </div>
             </div>
             <button id={toMonitor ? 'hidden' : 'next-button'} className="stylized-button" onClick={()=> animateToMonitor()}> Portfolio </button>
