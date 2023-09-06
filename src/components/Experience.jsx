@@ -1,4 +1,4 @@
-import { OrbitControls, Shadow } from "@react-three/drei";
+import { OrbitControls, Shadow, Loader } from "@react-three/drei";
 import { MeAvatar } from "./MeAvatar";
 import { R32 } from "./R32";
 import { NSX } from "./NSX";

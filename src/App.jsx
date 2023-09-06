@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Shadow } from "@react-three/drei";
+import { OrbitControls, Shadow, Loader } from "@react-three/drei";
 import { Experience } from "./components/Experience";
 import './App.css'
 import myautologo from '../src/assets/myauto-logo.png'
@@ -91,6 +91,7 @@ function App() {
                 <PerspectiveCamera fov={52} position={[-6.7, 8.2, 12.7]} makeDefault ref={camRef} />
                 <Experience />
               </Canvas>
+              <Loader/>
             </div>
             <div className="page1">
               <div id="intro-info" className={toMonitor ? 'hidden' : 'intro-info'}>
